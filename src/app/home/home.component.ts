@@ -29,25 +29,25 @@ export class HomeComponent implements OnInit {
       title: 'CupCakePop',
       description: 'Fullstack Web Project',
       image: 'assets/images/webnew.png',
-      linkUrl:"https://biarhaissem.github.io/portfolio_beatriz_pedro/web",
+      linkUrl:"https://biarhaissem.github.io/beatriz_pedro_portfolio/web",
     },
     {
       title: 'Smart Plant',
       description: 'IoT Mobile App',
       image: 'assets/images/smart sorriso.png',
-      linkUrl:"https://biarhaissem.github.io/portfolio_beatriz_pedro/iot"
+      linkUrl:"https://biarhaissem.github.io/beatriz_pedro_portfolio/iot"
     },
     {
       title: 'Cantina Reis App',
       description: 'E-commerce Mobile App',
       image: 'assets/images/frangoexpmao.png',
-      linkUrl:"https://biarhaissem.github.io/portfolio_beatriz_pedro/mobile"
+      linkUrl:"https://biarhaissem.github.io/beatriz_pedro_portfolio/mobile"
     },
     {
       title: 'Batalha dos Pets',
       description: 'Mobile App - Desafio UX/UI',
       image: 'assets/images/pets uau.png',
-      linkUrl:"https://biarhaissem.github.io/portfolio_beatriz_pedro/mobile"
+      linkUrl:"https://biarhaissem.github.io/beatriz_pedro_portfolio/mobile"
     },
   ];
 
@@ -76,23 +76,6 @@ batalhaItems = [
     image: 'assets/images/prog-t.png'
   },
 ];
-
-// currentSlide = 0;
-//   totalSlides = 8; // Número total de imagens no carrossel
-
-//   slide(direction: string) {
-//     const track = document.querySelector('.carousel-track') as HTMLElement;
-//     const slideWidth = track.offsetWidth / 8; // Dividido pelo total de imagens
-
-//     if (direction === 'next') {
-//       this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-//     } else {
-//       this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-//     }
-
-//     const offset = -(this.currentSlide * slideWidth);
-//     track.style.transform = `translateX(${offset}px)`;
-//   }
 
   selectedImage: string | null = null;  // Imagem atualmente selecionada
   showModal: boolean = false;  // Controla a exibição do modal
