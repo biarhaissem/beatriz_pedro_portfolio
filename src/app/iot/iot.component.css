@@ -25,11 +25,6 @@
   margin: auto; /* Centraliza o card dentro da coluna */
 }
 
-.img-fluid {
-  width: 80%;
-  height: auto;
-}
-
 .modal {
   display: none; /* Inicialmente escondido */
   position: fixed;

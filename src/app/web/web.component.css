@@ -33,11 +33,6 @@
   margin: auto; /* Centraliza o card dentro da coluna */
 }
 
-.img-fluid {
-  width: 90%;
-  height: auto;
-}
-
 .modal {
   display: none; /* Inicialmente escondido */
   position: fixed;
@@ -59,8 +54,8 @@
 /* Conteúdo do modal */
 .modal-content {
   position: relative;
-  max-width: 1000px;
-  max-height: 1000px;
+  max-width: 900px;
+  max-height: 900px;
   width: 100%;
   height: auto;
   background-color: rgba(97, 97, 97, 0.4);

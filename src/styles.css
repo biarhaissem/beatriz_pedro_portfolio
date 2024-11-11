@@ -160,8 +160,8 @@ h1, p {
 /* Conteúdo do modal */
 .modal-content {
   position: relative;
-  max-width: 1000px;
-  max-height: 1000px;
+  max-width: 900px;
+  max-height: 900px;
   width: 100%;
   height: auto;
   background-color: rgba(97, 97, 97, 0.6);
@@ -192,4 +192,19 @@ h1, p {
   object-fit: contain; /* Garante que a imagem se ajuste corretamente sem distorcer */
 }
 
+.image-container {
+  padding: 0; /* remove padding para garantir que a imagem ocupe o espaço */
+}
 
+.custom-img {
+  width: 100%; /* Ocupa 100% da largura do contêiner */
+  max-width: 100%; /* Previne que a imagem seja menor que o contêiner */
+  height: auto; /* Mantém a proporção */
+  display: flex;
+}
+
+.img-fluid {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
