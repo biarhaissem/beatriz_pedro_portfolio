@@ -7,41 +7,91 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebComponent implements OnInit {
 
-  cardapioItems = [
+  benchmarkingItems = [
     {
-      title: 'Wireframe',
+      title: 'Cupcake House',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/wirecup.png',
+      image: 'assets/images/cuphouse-pc.png',
+      linkUrl: 'https://www.cupcakehouserj.com.br'
     },
     {
-      title: 'Website Wix',
+      title: 'Just Cupcakes',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
-      image: 'assets/images/cup1.png',
+      image: 'assets/images/cupjust-pc.png',
+      linkUrl: 'https://www.justcupcakes.com.br'
+    },
+    {
+      title: 'Oficina Cupcake',
+      // description: 'HTML, CSS, JavaScript e Bootstrap',
+      image: 'assets/images/cupofi-pc.png',
+      linkUrl: 'http://oficinadocupcake.com.br'
+    },
+    {
+      title: 'Cupcake.ito',
+      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
+      image: 'assets/images/cupito-pc.png',
+      linkUrl: 'https://www.cupcakeito.com.br'
+    }
+  ];
+
+  wixItems = [
+    {
+      title: 'Wix Website',
+      // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
+      image: 'assets/images/cupwix-pc.png',
       linkUrl: 'https://biarhaissem.wixsite.com/cupcakepop'
     },
     {
-      title: 'Website Bootstrap',
-      // description: 'HTML, CSS, JavaScript e Bootstrap',
-      image: 'assets/images/cup2.png',
+      title: 'Mobile Version',
+      // description: 'Benchmarking, HTML5, Ferramentas NoCode',
+      image: 'assets/images/cupwix-mob.png',
+      linkUrl: ''
+    }
+  ];
+
+  newItems = [
+    {
+      title: 'New Website',
+      // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
+      image: 'assets/images/cuplet-pc.png',
       linkUrl: 'https://leeticiaalves6.github.io/projeto-dev-web/home.html'
     },
     {
-      title: 'Website Angular',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/cup4fotos.png',
+      title: 'Mobile Version',
+      // description: 'Benchmarking, HTML5, Ferramentas NoCode',
+      image: 'assets/images/cuplet-mob.png',
+      linkUrl: ''
+    }
+  ];
+
+  angularItems = [
+    {
+      title: 'Angular Website',
+      // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
+      image: 'assets/images/cupcake-pc.png',
       linkUrl: 'https://biarhaissem.github.io/cupcakepop_2024/home'
     },
     {
-      title: 'Front-end & Back-end',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/frontback.png',
+      title: 'Mobile Version',
+      // description: 'Benchmarking, HTML5, Ferramentas NoCode',
+      image: 'assets/images/cupcake-mob.png',
+      linkUrl: ''
+    }
+  ];
+
+  frontbackItems = [
+    {
+      title: 'Front-end',
+      // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
+      image: 'assets/images/front-pc.png',
       linkUrl: 'https://github.com/biarhaissem/Cupcakepop_Frontend'
     },
     {
-      title: 'Equipe Desenvolvedora',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/equipecup.png',
-    },
+      title: 'Back-end',
+      // description: 'Benchmarking, HTML5, Ferramentas NoCode',
+      image: 'assets/images/back-pc.png',
+      linkUrl: 'https://github.com/biarhaissem/Cupcakepop_Backend'
+    }
   ];
 
   showModal = false;

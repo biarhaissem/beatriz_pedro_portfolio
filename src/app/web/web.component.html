@@ -1,52 +1,165 @@
 <div class="container">
 
-  <div class="text-center">
-    <p class="text fs-1 fw-bolder pt-3">CupCakePop</p>
-    <p class="fs-3">Website Project</p>
-  <div class="fs-5">
-
-  <div class="row align-items-center">
-    <p class="fs-2 pt-1"></p>
-    <div class="row align-items-center">
-    <!-- Container da Imagem -->
-    <div class="col-md-6 order-md-2 d-flex justify-content-center">
-     <div class="image-container">
-      <img src="assets/images/hallopc.png" class="img-fluid rounded static-image" alt="cupcake morango"
-      (click)="expandImage('assets/images/hallopc.png')"> <!-- Clique para expandir a imagem -->
-      </div>
-    </div>
-
-    <!-- Container do Texto -->
-    <div class="col-md-6 order-md-1">
-      <div class="p-4 text-start">
-        <div class="fs-4">
-          <p>Site para venda de cupcakes feito em várias etapas.</p>
-          <p>01. UX Research e Benchmarking</p>
-          <p>02. Wireframe</p>
-          <p>03. Site Wix</p>
-          <p>04. Site com Angular Cli e Typescript</p>
-          <p>05. Mesmo site, com Angular Cli e Typescript no Front-end e, no Back-end, Laravel com PHP</p>
-          <p>Este foi meu primeiro projeto na faculdade. Desafiador e complexo.</p>
-          <p>Cada uma das etapas foi realizada com pesquisas e testes abrangentes e detalhados.</p>
-          <p>O estudo das ferramentas, plataformas e linguagens de programação utilizadas no projeto é contínuo.</p>
-        </div>
-      </div>
-    </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/beatriz-pedro-167695238" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/biarhaissem" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://biarhäissem.hearnow.com" target="_blank">
+      <i class="fab fa-spotify"></i>
+    </a>
   </div>
 
   <div class="text-center">
-    <p class="fs-4 pt-4"></p>
-    <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
-  <div class="fs-5">
-  <p class="fs-4 pt-1"></p>
+    <p class="text fs-1 fw-bolder pt-3">CupCakePop</p>
+    <p class="fs-3">Fullstack Web Project</p>
+    <p class="fs-4">Site para venda de cupcakes construído em várias etapas.</p>
+  <p class="fs-5">
+<p class="fs-2 pt-1"></p>
 
- <!-- CARDÁPIO -->
- <div class="row row-cols-2 row-cols-md-3 g-4 pt-4">
-  <div class="col" *ngFor="let item of cardapioItems">
-    <div class="card c-cardapio">
+    <div class="row align-items-center">
+      <!-- Container da Imagem -->
+      <div class="d-flex justify-content-center">
+      <div class="image-container">
+        <img src="assets/images/webnewgolden.png" class="img-fluid rounded static-image" alt="cupcake morango"
+        (click)="expandImage('assets/images/webnew.png')"> <!-- Clique para expandir a imagem -->
+      </div>
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+<div class="text-start">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-3 fw-bolder pt-3">Desafio & Objetivo</p>
+<div class="fs-5">
+  <div class="fs-4">
+    <p>Este projeto foi muito desafiador e complexo pois eu não tinha nenhuma experiência prévia: conforme eu ia aprendendo os conceitos, já desenvolvia o trabalho na prática.</p>
+    <p>Além das aulas da faculdade, estudei, pesquisei e consultei diversas fontes para obter o máximo possível de informação para organizar o cronograma de trabalho.</p>
+    <p>O principal objetivo deste projeto foi aprender como são as etapas de desenvolvimento de uma aplicação web.</p>
+  </div>
+</div>
+</div>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">01. Benchmarking</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Pesquisa prévia para imersão no universo dos sites de venda de cupcakes.</p>
+      <p>Essa etapa é imprescindível para o desenvolvimento de qualquer projeto pois ajuda na elaboração das funcionalidades, layout e ideias de modo geral.</p>
+    </div>
+  </div>
+  </div>
+
+<!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+  <div class="col" *ngFor="let item of benchmarkingItems">
+    <div class="card c-benchmarking">
       <img
         [src]="item.image"
-        class="card-img-left cardapio"
+        class="card-img-left benchmarking"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">02. Wireframes</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Primeiros esboços para possibilidades do layout do site.</p>
+      <p>Sempre gostei de fazer um rascunho antes de realizar qualquer atividade, mas nessa época, eu nem sabia o que era um "wireframe", rsrsrs!</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/wirecup1-gold.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/wirecup1.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/wirecup2-gold.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/wirecup2.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+<div class="text-start">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-3 fw-bolder pt-3">03. Wix Website</p>
+<div class="fs-4">
+    <p>Website desenvolvido através da plataforma Wix, com customização de template.</p>
+    <p>Eu já havia utilizado a plataforma para construção de sites no passado, muito antes de cursar a faculdade.</p>
+    <p>A plataforma Wix é muito interessante pois podemos escolher templates prontos e gratuitos para customizarmos de acordo com o nosso objetivo.</p>
+  </div>
+</div>
+
+    <!-- CARDÁPIO -->
+    <div class="row row-cols-1 row-cols-md-2 g-3 pt-4 justify-content-center">
+      <div class="col" *ngFor="let item of wixItems">
+        <div class="card c-wix text-center">
+          <img
+            [src]="item.image"
+            class="card-img-left wix"
+            alt="{{ item.title }}"
+            (click)="expandImage(item.image, item.linkUrl)">
+          <div class="card-body">
+            <p class="card-title">{{ item.title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
+    </div>
+  </div>
+</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">04. New Website</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Website criado com HTML, CSS, JavaScript e Bootstrap.</p>
+      <p>Nesta fase, tive mais dificuldades pois foi a minha primeira experiência de desenvolvimento web.</p>
+      <p>Não foi fácil, mas com muito esforço, dedicação, estudo e mil perguntas para meus colegas mais experientes, o esboço foi tomando forma.</p>
+    </div>
+  </div>
+  </div>
+
+ <!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
+  <div class="col" *ngFor="let item of newItems">
+    <div class="card c-new">
+      <img
+        [src]="item.image"
+        class="card-img-left new"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">
@@ -66,5 +179,132 @@
       <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
     </div>
   </div>
+</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">05. Angular Website</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Criação do Website utilizando o framework Angular e a linguagem TypeScript.</p>
+      <p>Considero esta etapa a mais difícil de todo o curso de Análise e Desenvolvimento de Sistemas.</p>
+      <p>Sofri muito, pois eu não sabia por onde começar. A primeira experiência com o framework Angular ficará guardada para sempre em minha memória.</p>
+      <p>Eu queria realmente entender como a arquitetura poderia ser organizada, mas como eu era inexperiente, tive que ter muita paciência e resiliência para encontrar a luz no final do túnel...</p>
+    </div>
+  </div>
+  </div>
+
+<!-- CARDÁPIO -->
+<div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
+  <div class="col" *ngFor="let item of angularItems">
+    <div class="card c-angular">
+      <img
+        [src]="item.image"
+        class="card-img-left angular"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
+    </div>
+  </div>
+</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-2 pt-1"></p>
+
+<div class="text-start">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-3 fw-bolder pt-3">06. Front-end & Back-end</p>
+<div class="fs-5">
+  <div class="fs-4">
+    <p>Etapa final de desenvolvimento utilizando Angular e TypeScript no Front-end e, Laravel e PHP no Back-end.</p>
+    <p>Nessa etapa final, eu já estava mais tranquila e achei muito interessante essa separação do front-end do back-end.</p>
+    <p>Construí duas versões finais: uma com Angular e Laravel, bem separadinha e, outra, apenas com o Laravel para visualização do "CRUD" (Create, Read, Update, Delete), utilizando o Blade.</p>
+    <p>Depois de todo o esforço, dedicação, lágrimas e insistência, vem a melhor parte: funcionou!</p>
+    <p>Pra mim, a sensação de ver que os dados registrados no cadastro do front-end "apareciam" nos registros do back-end, simultaneamente ao preenchimento do Banco de Dados e da API com Json, foi MÁGICO!</p>
+</div>
+  </div>
+</div>
+
+<!-- CARDÁPIO -->
+<div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
+<div class="col" *ngFor="let item of frontbackItems">
+  <div class="card c-frontback">
+    <img
+      [src]="item.image"
+      class="card-img-left frontback"
+      alt="{{ item.title }}"
+      (click)="expandImage(item.image, item.linkUrl)">
+    <div class="card-body text-center">
+      <p class="card-title">{{ item.title }}</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+<div class="modal-content" (click)="$event.stopPropagation()">
+  <span class="close-btn" (click)="closeModal()">&times;</span>
+  <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+  <!-- Botão para abrir o link, se houver um link associado -->
+  <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+    <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
+  </div>
+</div>
+</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+
+  <div class="text-center">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-2 fw-bolder pt-3">Conclusão</p>
+  <div class="fs-5">
+    <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Começar a aprender algum tema do zero, é sempre difícil.</p>
+      <p>É preciso ter coragem, determinação e disposição.</p>
+      <p>Muito além da experiência acadêmica, esse projeto me fez amadurecer como ser humano e tive a prova de que é possível obter sucesso quando o esforço é direcionado corretamente.</p>
+      <p>Me sinto honrada por ter tido a oportunidade de aprender tanto em tão pouco tempo!</p>
+      <p>Gostei tanto desse projeto que tenho vontade de, futuramente, vender quitutes reais pelo site, pois adoro cozinhar!</p>
+      <p>Vou aproveitar e deixar aqui um singelo merchandising, kkkkkkk!</p>
+  </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/kitcup.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/kitcup.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/cupresent.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/cupresent.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+  <p class="fs-2 pt-1"></p>

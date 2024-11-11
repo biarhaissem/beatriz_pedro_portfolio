@@ -7,94 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IotComponent implements OnInit {
 
-  cardapioItems = [
+  plantechItems = [
     {
-      title: 'Question Zero',
+      title: 'Primeiro Teste',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/questionzero.png',
+      image: 'assets/images/mob-plant-1.png',
+      linkUrl: 'https://youtu.be/7sXbEuw9uZA?si=fVr7sGCRd1h6DSqG'
     },
     {
-      title: 'Business Model Canvas',
-      // description: 'Benchmarking, HTML5, Ferramentas NoCode',
-      image: 'assets/images/canvas.png',
-    },
-    {
-      title: 'Stakeholder Map',
+      title: 'Apresentação Final',
       // description: 'HTML, CSS, JavaScript e Bootstrap',
-      image: 'assets/images/map.png',
-    },
-    {
-      title: 'Design Thinking',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/doublepc.png',
-    },
-    {
-      title: 'Arquitetura',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/arqplantpc.png',
-    },
-    {
-      title: 'Protótipo PLANTECH',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/plantcomp.png',
-      linkUrl: 'https://youtu.be/7sXbEuw9uZA?si=g5UhvabDLUXc7Xes'
-    },
-    {
-      title: 'App PLANTECH',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/plantechmobcapa.png',
-      linkUrl: 'https://youtu.be/tknjhV3QkG8?si=EDv7PDu6241joWS3'
-    },
-    {
-      title: 'Cliente & Equipe',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/sueliebia.png',
-      linkUrl: 'https://youtu.be/Vw1stw0pCN0?si=FnEqjwX4PgzuR6DD'
-    },
+      image: 'assets/images/plantech-comp-pc.png',
+      linkUrl: 'https://youtu.be/tknjhV3QkG8?si=flq1yLqPdG67ND7A'
+    }
   ];
 
-  batalhaItems = [
+  smartItems = [
     {
-      title: 'Painel 17 ODS',
+      title: 'Protótipo Completo',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
-      image: 'assets/images/ODS.png',
+      image: 'assets/images/carregando2.png',
+      linkUrl: 'https://youtube.com/shorts/n9omp3_MxsQ?si=Mi_iaxbcNDJFk4jU'
     },
     {
-      title: 'Cronograma',
+      title: 'Funcionamento da Bomba',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
-      image: 'assets/images/crono.png',
-    },
-    {
-      title: 'Matriz SWOT',
-      // description: 'HTML, CSS, JavaScript e Bootstrap',
-      image: 'assets/images/swot.png',
-    },
-    {
-      title: 'Metodologia 5W2H',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/5w2h.png',
-    },
-    {
-      title: 'Arquitetura',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/arqsmarttab.png',
-    },
-    {
-      title: 'Protótipo Smart Plant',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/protcomp.png',
-    },
-    {
-      title: 'App Smart Plant',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/smartmobcapa.png',
-      linkUrl: 'https://www.youtube.com/shorts/n9omp3_MxsQ'
-    },
-    {
-      title: 'Equipe & Cliente',
-      // description: 'HTML, CSS, JavaScript, TypeScript, Bootstrap, Angular',
-      image: 'assets/images/equipesmart.png',
-      linkUrl: 'https://youtube.com/shorts/IfF88wXci04?si=d77SgJp6GBJhSadd'
+      image: 'assets/images/bombinha2.png',
+      linkUrl: 'https://youtube.com/shorts/IfF88wXci04?si=5rcoRc5-pMxC_xby'
     },
   ];
 
@@ -124,5 +63,6 @@ export class IotComponent implements OnInit {
     this.selectedImage = null;
     this.selectedLink = null;
   }
-
 }
+
+

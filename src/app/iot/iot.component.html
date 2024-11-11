@@ -1,65 +1,235 @@
 <div class="container">
 
-  <div class="text-center">
-    <p class="text fs-1 fw-bolder pt-3">PLANTECH</p>
-    <p class="fs-3 fw-normal">IoT Mobile App - Monitor de Umidade</p>
-  <div class="fs-5">
-
-  <div class="row align-items-center">
-    <p class="fs-2 pt-1"></p>
-    <div class="row align-items-center">
-    <!-- Container da Imagem -->
-    <div class="col-md-6 order-md-2 d-flex justify-content-center">
-     <div class="image-container">
-      <img src="assets/images/plantechmobcapa.png" class="img-fluid rounded static-image" alt="cupcake morango"
-      (click)="expandImage('assets/images/plantechmobcapa.png')"> <!-- Clique para expandir a imagem -->
-      </div>
-    </div>
-
-    <!-- Container do Texto -->
-    <div class="col-md-6 order-md-1">
-      <div class="p-4 text-start">
-        <div class="fs-4">
-          <p>App mobile IoT para monitoramento remoto da umidade dos vasos de plantas.</p>
-          <p>Desenvolvemos um protótipo IoT utilizando a placa programável Wi-Fi ESP8266, um sensor de umidade e a IDE Arduino para programação com a linguagem C.</p>
-          <p>Através da plataforma ucraniana Blynk IoT, criamos a interface para controle remoto mobile integrado ao protótipo para receber os dados em tempo real.</p>
-          <p>Utilizamos ferramentas modernas para a elaboração e desenvolvimento do projeto.</p>
-          <p>01. Question Zero</p>
-          <p>02. Business Model Canvas</p>
-          <p>03. Design Thinking - Double Diamond</p>
-          <p>04. Stakeholder Map</p>
-          <p>05. Arquitetura do Sistema</p>
-          <p>06. Design, criação e integração do App PLANTECH com a Blynk IoT.</p>
-        </div>
-      </div>
-    </div>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/beatriz-pedro-167695238" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/biarhaissem" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://biarhäissem.hearnow.com" target="_blank">
+      <i class="fab fa-spotify"></i>
+    </a>
   </div>
 
   <div class="text-center">
-    <p class="fs-4 pt-4"></p>
-    <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
-  <div class="fs-5">
-  <p class="fs-4 pt-1"></p>
+    <p class="text fs-1 fw-bolder pt-3">PLANTECH</p>
+    <p class="fs-3 fw-normal">IoT Mobile App - Monitor de Umidade</p>
+    <p class="fs-4">Aplicativo mobile IoT para monitoramento remoto da umidade dos vasos de plantas.</p>
+    <div class="fs-5">
+  <p class="fs-2 pt-1"></p>
 
- <!-- CARDÁPIO -->
- <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
-  <div class="col" *ngFor="let item of cardapioItems">
-    <div class="card c-cardapio">
+  <div class="row align-items-center">
+    <!-- Container da Imagem -->
+    <div class="d-flex justify-content-center">
+    <div class="image-container">
+      <img src="assets/images/capa-plant.png" class="img-fluid rounded static-image" alt="cupcake morango"
+      (click)="expandImage('assets/images/capa-plant.png')"> <!-- Clique para expandir a imagem -->
+    </div>
+    </div>
+  </div>
+  <p class="fs-1 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">Desafio & Objetivo</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>O desenvolvimento do aplicativo trouxe vários desafios pois eu nunca havia tido contato com placas programáveis, sensores, IDE Arduino e arquiteturas IoT.</p>
+      <p>Eu fui impulsionada por uma vontade imensa de aprender sobre esse novo universo!</p>
+      <p>O objetivo do projeto era possibilitar a monitoração remota, via smartphone, da umidade dos vasos de plantas, onde os dados coletados através do sensor enterrado no vaso, ligado à placa Wi-Fi ESP8266, fossem enviados para o celular, em tempo real.</p>
+      <p>Foram necessárias pesquisas abrangentes, detalhadas, aquisição de componentes, testes e muita dedicação para realizar este projeto.</p>
+      <p>Além da parte física da construção do protótipo, utilizei a plataforma ucraniana Blynk IoT para criar a interface do aplicativo mobile integrado ao protótipo.</p>
+      <p>As etapas de desenvolvimento foram organizadas através de ferramentas modernas para elaboração de projetos.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">01. Design Thinking - Double Diamond e Question Zero </p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>A primeira ação para iniciar a ideação do projeto, foi utilizado o modelo Double Diamond do Design Thinking.</p>
+      <p>Após uma sessão de brainstorming, foi possível levantar os principais pontos para o desenvolvimento do projeto.</p>
+      <p>Utilizamos o Question Zero para organizar as principais perguntas e respostas coletadas durante o brainstorming.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/double-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/double-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/question-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/question-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+    <div class="text-start">
+      <p class="fs-4 pt-4"></p>
+      <p class="text fs-3 fw-bolder pt-3">02. Business Model Canvas e Stakeholder Map</p>
+    <div class="fs-5">
+      <div class="fs-4">
+        <p>A partir das informações organizadas com o Question Zero, foi possível o preenchimento do Business Model Canvas.</p>
+        <p>Na sequência, foi diagramado o Stakeholder Map para representação das partes envolvidas.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="row align-items-center pt-4">
+      <!-- Imagem 1 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/canvas-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/canvas-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+
+       <!-- Imagem 2 -->
+       <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/stakemap-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/stakemap-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">03. Customer Journey Mapping e Stakeholder Interview</p>
+  <div class="fs-4">
+      <p>Customer Journey Mapping é uma maneira estratégica para organização e visualização das partes envolvidas em um projeto, com a descrição das características, responsabilidades e funções de cada um.</p>
+      <p>A disposição das informações pode ser trabalhada de forma criativa, interativa e agradável para o entendimento do grupo.</p>
+      <p>Através da Stakeholder Interview, foi possível organizar perguntas relevantes às partes envolvidas e, através das respostas, tive uma melhor compreensão das necessidades e desejos dos entrevistados, com o objetivo de construir uma aplicação adequada para os futuros usuários.</p>
+    </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/cust-new-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/cust-new-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/stake-inter-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/stake-inter-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+    <div class="text-start">
+      <p class="fs-4 pt-4"></p>
+      <p class="text fs-3 fw-bolder pt-3">04. Componentes do Protótipo e Arquitetura do Sistema</p>
+    <div class="fs-5">
+      <div class="fs-4">
+        <p>Após pesquisa e levantamento dos componentes necessários, foram feitas as aquisições para início da construção do protótipo.</p>
+        <p>Depois do estudo aprofundado dos modelos e exemplos selecionados, a equipe decidiu pelo mais completo em relação a documentação e detalhes.</p>
+        <p>O protótipo foi construído seguindo o mapa, com muita atenção a cada ligação.</p>
+        <p class="text fs-4 fw-bolder pt-3"><a href="https://blog.smartkits.com.br/blynk-iot-monitoramento-com-esp8266-e-sensor-de-umidade-do-solo-higrometro/" target="_blank">Conheça o Projeto Referência</a></p>
+      </div>
+    </div>
+    </div>
+
+    <div class="row align-items-center pt-4">
+      <!-- Imagem 1 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/com-prot-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/com-prot-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+
+      <!-- Imagem 2 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/arq-sis-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/arq-sis-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+    <div class="text-start">
+      <p class="fs-4 pt-4"></p>
+      <p class="text fs-3 fw-bolder pt-3">05. IDE Arduino e Plataforma Blynk IoT</p>
+    <div class="fs-5">
+      <div class="fs-4">
+        <p>Com todas as bibliotecas necessárias instaladas na IDE Arduino, o código foi escrito com a linguagem C e, finalmente carregado na plaquinha ESP8266.</p>
+        <p>Não funcionou nas primeiras vezes, rsrsrs, mas depois de algumas correções, rodou direitinho! Ufaaaaaa!</p>
+        <p>Na plataforma Blynk IoT, foi realizada a integração do protótipo físico com a interface do sistema.</p>
+        <p>instalamos o aplicativo Blynk no smartphone, com as configurações necessárias.</p>
+        <p>Criamos o design com muito carinho, para ficar intuitivo e agradável.</p>
+        <p>Deu muuuuuito trabalho, um pouco de desespero, rsrsrs, mas depois de alguns dias, o aplicativo e o protótipo funcionaram.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="row align-items-center pt-4">
+      <!-- Imagem 1 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/ard-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/ard-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+
+      <!-- Imagem 2 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/blynk-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/blynk-pc-t.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+    </div>
+    <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">06. Teste e Apresentação Final</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Quando o sistema finalmente funcionou e foi possível ver no smartphone, em tempo real, os dados coletados pelo sensor e tranferidos para a placa, eu chorei!</p>
+      <p>A apresentação final na universidade fez o maior sucesso: fomos o único grupo que desenvolveu e levou o sistema completo e funcionando para todos prestigiarem!</p>
+  </div>
+    </div>
+  </div>
+
+  <!-- CARDÁPIO -->
+  <div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
+  <div class="col" *ngFor="let item of plantechItems">
+    <div class="card c-plantech">
       <img
         [src]="item.image"
-        class="card-img-left cardapio"
+        class="card-img-left plantech"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">
         <p class="card-title">{{ item.title }}</p>
-        <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-<!-- Modal para exibir a imagem ampliada -->
-<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <!-- Modal para exibir a imagem ampliada -->
+  <div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
   <div class="modal-content" (click)="$event.stopPropagation()">
     <span class="close-btn" (click)="closeModal()">&times;</span>
     <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
@@ -69,65 +239,262 @@
     </div>
   </div>
   </div>
-</div>
-<p class="fs-1 pt-1"></p>
-<p class="fs-1 pt-1"></p>
-<p class="fs-1 pt-1"></p>
-<p class="fs-1 pt-1"></p>
+  <p class="fs-2 pt-1"></p>
+  <p class="fs-1 pt-1"></p>
+
+    <div class="text-center">
+      <p class="fs-4 pt-4"></p>
+      <p class="text fs-2 fw-bolder pt-3">Conclusão</p>
+    <div class="fs-5">
+      <p class="fs-2 pt-1"></p>
+
+    <div class="text-start">
+    <div class="fs-5">
+      <div class="fs-4">
+        <p>Esse projeto foi sensacional! Eu fiquei apaixonada pelas plaquinhas, componentes, sensores, leds coloridos, tudo é muito fofo!</p>
+        <p>Pra variar, não foi nem um pouco trivial a jornada, mas foi emocionante!</p>
+        <p>Desde a primeira vez que vi uma dessas plaquinhas programáveis na minha frente, fiquei com "olho comprido", rsrsrs, pois eu queria muito "fuçar" e entender como funcionava.</p>
+        <p>O aprendizado conquistado com esse projeto me deu muita alegria, satisfação e me deixou sonhando com novas experiências.</p>
+        <p>Admito que perturbei todos os meus amigos, pois eu não parava de falar sobre esse projeto, kkkkkkk!</p>
+        <p>Futuramente, gostaria de construir outros protótipos para diversas finalidades interessantes.</p>
+    </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center pt-4">
+      <!-- Imagem 1 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/mock-1.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/mock-1.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+
+      <!-- Imagem 2 -->
+      <div class="col-6">
+        <div class="image-container">
+          <img src="assets/images/mock-2.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/mock-2.png')">
+          <p class="fs-2 pt-1"></p>
+        </div>
+      </div>
+    </div>
+  <p class="fs-1 pt-1"></p>
+  <p class="fs-1 pt-1"></p>
+  <p class="fs-1 pt-1"></p>
+  <p class="fs-1 pt-1"></p>
 
 <div class="text-center">
   <p class="text fs-1 fw-bolder pt-3">Smart Plant</p>
   <p class="fs-3 fw-normal">IoT Mobile App - Monitoração e Irrigação Remotas</p>
-<div class="fs-5">
+  <p class="fs-4">Aplicativo mobile IoT para monitoramento de umidade e irrigação remotos de vasos de plantas.</p>
+  <div class="fs-5">
+<p class="fs-2 pt-1"></p>
 
 <div class="row align-items-center">
-  <p class="fs-2 pt-1"></p>
-  <div class="row align-items-center">
   <!-- Container da Imagem -->
-  <div class="col-md-6 order-md-2 d-flex justify-content-center">
-   <div class="image-container">
-    <img src="assets/images/smartmobcapa.png" class="img-fluid rounded static-image" alt="cupcake morango"
-    (click)="expandImage('assets/images/smartmobcapa.png')"> <!-- Clique para expandir a imagem -->
+  <div class="d-flex justify-content-center">
+  <div class="image-container">
+    <img src="assets/images/capa-smart-new.png" class="img-fluid rounded static-image" alt="cupcake morango"
+    (click)="expandImage('assets/images/capa-smart-new.png')"> <!-- Clique para expandir a imagem -->
+  </div>
+  </div>
+</div>
+<p class="fs-1 pt-1"></p>
+
+<div class="text-start">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-3 fw-bolder pt-3">Desafio & Objetivo</p>
+<div class="fs-5">
+  <div class="fs-4">
+    <p>No projeto Smart Plant, tive a oportunidade de continuar o PLANTECH com o desafio de implementar uma bomba submersa para irrigação remota sustentável.</p>
+    <p>Mesmo com o conhecimento adquirido no projeto PLANTECH, o Smart Plant deu muito trabalho pois a arquitetura é mais complexa, com mais componentes e com função interativa de acionamento da bomba pelo aplicativo do smartphone.</p>
+    <p>Foi criado outro aplicativo, com outro código, obviamente, e necessitou de muitas etapas de testes.</p>
+    <p>O objetivo do projeto, além do monitoramento de umidade, foi promover irrigação sustentável remota dos vasos de plantas da floricultura, com foco na economia da água utilizada e maior controle do estoque.</p>
+    <p>A IDE Arduino para codificação e a plataforma Blynk IoT foram utilizadas novamente para desenvolvimento do aplicativo e integração com o novo protótipo.</p>
+  </div>
+</div>
+</div>
+
+<div class="text-start">
+  <p class="fs-4 pt-4"></p>
+  <p class="text fs-3 fw-bolder pt-3">Tabela dos 17 ODS e Projeto SWAMP</p>
+<div class="fs-5">
+  <div class="fs-4">
+    <p>Através das aulas de Responsabilidade Social e Sustentabilidade, conheci os 17 Objetivos de Desenvolvimento Sustentável (ODS), da Agenda 2030, e foquei no ODS 9: "Indústria, Inovação e Infraestrutura", para a elaboração do projeto.</p>
+    <p>O projeto Smart Plant está alinhado ao ODS 9 - "Indústria, Inovação e Infraestrutura", que engloba "Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação".</p>
+    <p>O Projeto brasileiro SWAMP (Smart Water Management Platform) serviu como inspiração para visualização de uma aplicação de grande porte, com os mesmos princípios do do Smart Plant.</p>
+    <p class="text fs-4 fw-bolder pt-3"><a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/item/191516/1/AP-Swamp.pdf" target="_blank">SWAMP</a></p>
+  </div>
+</div>
+</div>
+
+<div class="row align-items-center pt-4">
+  <!-- Imagem 1 -->
+  <div class="col-6">
+    <div class="image-container">
+      <img src="assets/images/17ods-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/17ods-pc-t.png')">
+      <p class="fs-2 pt-1"></p>
     </div>
   </div>
 
-  <!-- Container do Texto -->
-  <div class="col-md-6 order-md-1">
-    <div class="p-4 text-start">
-      <div class="fs-4">
-        <p>App mobile IoT para irrigação remota sustentável e controle de umidade da terra de vasos de plantas.</p>
-        <p>Através das aulas de Responsabilidade Social e Sustentabilidade, estudamos os 17 Objetivos de Desenvolvimento Sustentável (ODS), da Agenda 2030, e focamos no ODS 9: Indústria, Inovação e Infraestrutura, para elaborarmos nosso projeto.</p>
-        <p>Pudemos utilizar alguns componentes do PLANTECH para integrar ao sistema remoto de irrigação sustentável.</p>
-        <p>Criamos outro aplicativo mobile pela Blynk IoT.</p>
-        <p>01. Estudo aprofundado dos 17 ODS</p>
-        <p>02. Cronograma</p>
-        <p>03. Análise SWOT</p>
-        <p>04. Método 5W2H</p>
-        <p>05. Arquitetura do Sistema</p>
-        <p>06. Design, criação e integração do App Smart Plant com a Blynk IoT.</p>
-      </div>
+  <!-- Imagem 2 -->
+  <div class="col-6">
+    <div class="image-container">
+      <img src="assets/images/swamp-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/swamp-pc-t.png')">
+      <p class="fs-2 pt-1"></p>
     </div>
   </div>
 </div>
+<p class="fs-2 pt-1"></p>
 
-<div class="text-center">
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">02. ESG e Cronograma</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>ESG (Environmental, Social and Governance), corresponde às práticas ambientais, sociais e de governança de uma organização.</p>
+      <p>Os critérios ESG estão totalmente relacionados aos 17 Objetivos de Desenvolvimento Sustentável (ODS), estabelecidos pelo Pacto Global, iniciativa mundial que engloba a ONU e várias entidades internacionais.</p>
+      <p>Para a organização e tarefas de cada membro do grupo, foi criado um cronograma detalhado.</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/esg-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/esg-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+     <!-- Imagem 2 -->
+     <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/crono-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/crono-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+<div class="text-start">
   <p class="fs-4 pt-4"></p>
-  <p class="text fs-2 fw-bolder pt-3">DETAILS</p>
-<div class="fs-5">
-<p class="fs-4 pt-1"></p>
+  <p class="text fs-3 fw-bolder pt-3">03. Análise SWOT e Método 5W2H</p>
+<div class="fs-4">
+    <p>Através da ferramenta de gestão empresarial Matriz SWOT, também conhecida como análise FOFA, que significa Strengths (forças), Weaknesses (fraquezas), Opportunities (oportunidades) e Threats (ameaças), os cenários interno e externo da floricultura foram analisados.</p>
+    <p>Semelhante ao Question Zero, foi utilizada a metodologia 5W2H, que significa - 5W: What, Why, Where, When e Who e 2H: How, How Much.</p>
+  </div>
+</div>
+
+<div class="row align-items-center pt-4">
+  <!-- Imagem 1 -->
+  <div class="col-6">
+    <div class="image-container">
+      <img src="assets/images/swot-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/swot-pc-t.png')">
+      <p class="fs-2 pt-1"></p>
+    </div>
+  </div>
+
+  <!-- Imagem 2 -->
+  <div class="col-6">
+    <div class="image-container">
+      <img src="assets/images/5w2h-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/5w2h-pc-t.png')">
+      <p class="fs-2 pt-1"></p>
+    </div>
+  </div>
+</div>
+<p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">04. Componentes do Protótipo e Arquitetura do Sistema</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Após pesquisa e levantamento dos componentes necessários, foram feitas as aquisições para início da construção do protótipo.</p>
+      <p>Foi possível utilizar parte dos componentes do PLANTECH.</p>
+      <p>Depois do estudo aprofundado de modelos e exemplos selecionados, a equipe decidiu pela estrutura mais adequada ao Smart Plant.</p>
+      <p>O protótipo foi construído seguindo o mapa das ligações.</p>
+      <p class="text fs-4 fw-bolder pt-3"><a href="https://srituhobby.com/how-to-make-a-plant-watering-system-with-the-nodemcu-esp8266-board-and-the-new-blynk-update/" target="_blank">Conheça o Projeto Referência</a></p>
+    </div>
+  </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/comp-prot-pc-smart.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/comp-prot-pc-t-smart.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/arq-sis-pc-smart.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/arq-sis-pc-t-smart.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">05. IDE Arduino e Plataforma Blynk IoT</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Com todas as bibliotecas necessárias instaladas na IDE Arduino, o código foi escrito com a linguagem C e carregado na plaquinha ESP8266.</p>
+      <p>A bomba não funcionou nas primeiras tentativas, mesmo com as ligações corretas, pois os jumpers e a protoboard são muito delicados e suscetíveis a mau contato. </p>
+      <p>Na plataforma Blynk IoT, foi feita a integração do protótipo físico com a interface do sistema.</p>
+      <p>No smartphone, usamos o app Blynk, já instalado previamente, para criar o aplicativo Smart Plant, com as configurações necessárias.</p>
+      <p>Criamos o design para a nova aplicação.</p>
+      <p>Depois de alguns dias de sofrimento e dúvidas, finalmente o protótipo funcionou, mas desta vez, eu não chorei, rsrsrs, pois já tinha água jorrando pela mangueirinha da bomba!</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/ard-smart-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/ard-smart-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/blynk-smart-pc.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/blynk-smart-pc-t.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-3 fw-bolder pt-3">06. Apresentação à Cliente</p>
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Foi emocionante testemunhar o singelo protótipo funcionando direitinho!</p>
+      <p>A cliente aprovou o protótipo e se surpreendeu com a rapidez da resposta da bomba quando o botão de irrigação foi acionado.</p>
+  </div>
+    </div>
+  </div>
 
 <!-- CARDÁPIO -->
-<div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
-<div class="col" *ngFor="let item of batalhaItems">
-  <div class="card c-batalha">
+<div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
+<div class="col" *ngFor="let item of smartItems">
+  <div class="card c-smart">
     <img
       [src]="item.image"
-      class="card-img-left batalha"
+      class="card-img-left smart"
       alt="{{ item.title }}"
       (click)="expandImage(item.image, item.linkUrl)">
     <div class="card-body text-center">
       <p class="card-title">{{ item.title }}</p>
-      <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
     </div>
   </div>
 </div>
@@ -144,5 +511,47 @@
   </div>
 </div>
 </div>
-</div>
+<p class="fs-2 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+
+  <div class="text-center">
+    <p class="fs-4 pt-4"></p>
+    <p class="text fs-2 fw-bolder pt-3">Conclusão</p>
+  <div class="fs-5">
+    <p class="fs-2 pt-1"></p>
+
+  <div class="text-start">
+  <div class="fs-5">
+    <div class="fs-4">
+      <p>Como eu estava muito encantada com este universo IoT, não resisti à tentação de criar outro protótipo e aplicativo!</p>
+      <p>A parte mais difícil de todas foi aprender a lidar com a bomba e com o mau contato dos componentes.</p>
+      <p>O protótipo ficou lindo, funcionou, mas a estrutura é muito frágil e, para utilização contínua, os componentes, sensores e protoboards precisam ser de melhor qualidade.</p>
+      <p>Fiquei apreensiva na véspera da apresentação à cliente, pois tive medo que o protótipo "travasse" na hora H.</p>
+      <p>Felizmente, a história teve final feliz e o Projeto Smart Plant foi considerado o melhor de todas as turmas.</p>
+      <p>Pra fechar com chave de ouro, tirei nota 10!</p>
+      <p>Que alegria!</p>
+  </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center pt-4">
+    <!-- Imagem 1 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/tech-smart.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/tech-smart.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+
+    <!-- Imagem 2 -->
+    <div class="col-6">
+      <div class="image-container">
+        <img src="assets/images/praia-smart.png" class="img-fluid rounded" alt="cupcake morango" (click)="expandImage('assets/images/praia-smart.png')">
+        <p class="fs-2 pt-1"></p>
+      </div>
+    </div>
+  </div>
+<p class="fs-1 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+
 

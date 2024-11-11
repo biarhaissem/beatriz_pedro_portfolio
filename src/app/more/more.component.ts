@@ -16,25 +16,25 @@ export class MoreComponent implements OnInit {
     {
       title: 'PLANTECH',
       // description: '5 Planos de Garrett, 10 Heurísticas de Nielsen, Honeycomb, Gestalt.',
-      image: 'assets/images/plantmore.png',
+      image: 'assets/images/mob-plant-1.png',
       linkUrl: 'https://drive.google.com/drive/folders/1BHsslyj0UiLBW9YAHv4uFV9VpkCUvfo-?usp=sharing'
     },
     {
       title: 'Smart Plant',
       // description: 'HTML, CSS, JavaScript, TypeScript, Boostrap, PHP, Angular, Laravel.',
-      image: 'assets/images/smartaula.png',
+      image: 'assets/images/dupla.png',
       linkUrl: 'https://drive.google.com/drive/folders/16ACpcyTATzHGxs2gUc9plcmEOfu_q6x6?usp=sharing'
     },
     {
       title: 'Cantina Reis App',
       // description: 'UX Research, UX Writing, Figma, Prototipação, Expo, React Native.',
-      image: 'assets/images/banner.png',
+      image: 'assets/images/frangoexpmao.png',
       linkUrl: 'https://youtu.be/28ajG7aFZe8?si=dra3t4_ykrOGU5WD'
     },
     {
       title: 'Curriculum Vitae',
       // description: 'Python, C, Robotica, Arduino, ESP8266, ESP32, MySQL, PostgreSQL.',
-      image: 'assets/images/curriculumpic.png',
+      image: 'assets/images/curriculum.png',
       linkUrl: 'https://drive.google.com/file/d/1muG46WHndrILV00Yh_30xSjDjJHsObbI/view?usp=sharing'
     },
   ];

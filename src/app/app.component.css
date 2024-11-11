@@ -7,7 +7,7 @@
 }
 
 .navbar-nav .nav-link.active-link {
-  color: #8a8a8a !important; /* Certifique-se que a cor se aplique */
+  color: #b8860c !important; /* Certifique-se que a cor se aplique */
   font-weight: bold; /* Deixe em negrito para destaque */
 }
 

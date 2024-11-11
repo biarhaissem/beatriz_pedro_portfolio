@@ -1,34 +1,86 @@
 .logotipo-container {
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.text-center {
-  color: #212121; /* Cor do texto */
-  font-weight: bold; /* Deixe o texto em negrito, se preferir */
-  white-space: nowrap; /* Evita que o texto quebre a linha */
-}
-
-.img-fluid {
   margin-top: -2rem;
-  max-height: 90%;
-  max-width: 90%;
-  /* padding: 1rem; */
-  position:center;
-  display:flex;
-  margin-bottom: -20px;
+  margin-bottom: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 100%;
+  gap: 4rem; /* Espaçamento entre os ícones */
 }
 
-/* Cards ajustáveis */
+.logotipo {
+max-width: 250px; /* Ajuste o tamanho do logo conforme necessário */
+filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.2)); /* Sombra do logo */
+}
+
+.logotipo-text-center {
+font-size: 30px; /* Tamanho do texto */
+font-weight: bold; /* Deixe o texto em negrito, se preferir */
+text-align: center;
+white-space: nowrap; /* Evita que o texto quebre a linha */
+}
+
+/* Contêiner do ticker */
+.ticker-container {
+  width: 100%; /* Largura visível do ticker */
+  height: 80px; /* Altura conforme necessário */
+  overflow: hidden;
+  position: relative;
+  /*border-top: 2px solid #ccc; /* Barrinha horizontal */
+}
+
+/* Animação de rotação horizontal */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ticker com rolagem contínua */
+.ticker {
+  display: flex;
+  align-items: center;
+  animation: scroll 15s linear infinite; /* Tempo e tipo de animação */
+}
+
+.ticker img {
+  width: 40px; /* Tamanho dos ícones */
+  height: auto;
+  margin: 0 1rem; /* Espaçamento entre ícones */
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.ticker img:hover {
+  opacity: 1;
+}
+
+/* .card {
+  max-width: 350px;
+  gap: 0.2rem;
+} */
+
 .card {
-  width: 300px;
-  max-width: 200px;
-  margin: 20px auto;
+  width: auto; /* ou o tamanho que preferir */
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a imagem não extrapole o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Ajusta a imagem para ocupar toda a largura do card */
+  border-radius: inherit; /* Herdará o border-radius do card */
+}
+
+.card-content {
+  padding: 16px;
 }
 
 

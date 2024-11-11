@@ -1,98 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOME | Beatriz Pedro</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>HOME | Beatriz Pedro</title>
 
-    <meta name="description" content="Trabalho da matéria de Dev Web da Faculdade Unimetrocamp">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio Beatriz Pedro">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <div class="container">
-      <p class="fs-4 pt-1"></p>
+<div class="container">
+  <p class="fs-4 pt-1"></p>
+  <p class="fs-4 pt-1"></p>
+  <p class="fs-4 pt-1"></p>
 
-      <!-- Logotipo  -->
-      <div class="logotipo-container">
-        <div class="text-center">
-          <span class="text-center fs-1 fw-bold">BEATRIZ PEDRO<p class="text-center fw-normal fs-2">Developer & Designer<p class="text-center fs-1">PORTFOLIO</p></span>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/beatriz-pedro-167695238" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/biarhaissem" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://biarhäissem.hearnow.com" target="_blank">
+      <i class="fab fa-spotify"></i>
+    </a>
+  </div>
 
-    <!-- Imagem estática maior -->
+  <!-- Logotipo  -->
+  <div class="logotipo-container">
+    <img src="assets/images/bia-logo.png" class="logotipo rounded-circle" alt="Logotipo" (click)="expandImage('assets/images/bia-logo.png')"/>
     <div class="text-center">
-      <img src="assets/images/layouthalloween.png" alt="Imagem Estática" class="img-fluid mx-auto mt-1"
-      (click)="openModal('assets/images/layouthalloween.png')"
-      style="cursor: pointer;">
+      <span class="text-center fs-1 fw-bold">BEATRIZ PEDRO<p class="text-center fw-normal fs-2">Developer & Designer<p class="text-center fs-1">PORTFOLIO</p></span>
     </div>
+  </div>
 
-      <!-- Modal para exibir a imagem ampliada -->
-      <div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
-        <div class="modal-content" (click)="$event.stopPropagation()"> <!-- Para evitar fechar o modal ao clicar dentro dele -->
-          <span class="close-btn" (click)="closeModal()">&times;</span>
-          <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
-        </div>
-      </div>
-      <div *ngIf="currentImage" class="modal">
-        <div class="modal-content">
-          <span class="close" (click)="closeModal()">&times;</span>
-          <img [src]="currentImage" alt="Imagem Expandida" class="img-fluid">
-        </div>
-      </div>
-    <!-- Galeria -->
+  <div class="row align-items-center">
 
-    <!-- Entre em contato -->
-    <p class="fs-2 fw-bold text-center pt-5">Let´s keep in touch!</p>
-    <p class="fs-4 pt-4"></p>
-    <div class="row row-cols-4 row-cols-md-3 g-6 text-center">
-      <div class="col">
-      <div class="card sociais">
-          <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
-          <div class="card-body">
-            <p class="fw-normal fw-bold fs-3">Networking</p>
-          </div>
-          <div class="col">
-            <div class="sociais">
-              <a class="link" href="https://www.linkedin.com/in/beatriz-pedro-167695238" target="_blank"><i
-                class="fab fa-linkedin fw-bold fs-1"></i></a>
-              <p class="fs-4 pt-2"></p>
-          </div>
-        </div>
+  <!-- Container da Imagem -->
+  <!-- CARDÁPIO -->
+  <p class="fs-2 pt-1"></p>
+  <p class="fs-2 pt-1"></p>
+
+ <!-- Container do Texto -->
+ <div class="col-md-6 order-md-1">
+  <div class="p-4 text-start">
+    <div class="fs-4">
+      <p>Olá! Meu nome é Beatriz.</p>
+      <p>Seja muito bem-vindo!</p>
+      <p class="fs-2 pt-1"></p>
+      <p>Recém-graduada em Análise e Desenvolvimento de Sistemas, sou apaixonada por Tecnologia e Design.</p>
+      <p>A junção da arte, criatividade e técnicas de design com a lógica e algoritmos de programação é a minha maior motivação profissional.</p>
+      <p>Durante a jornada acadêmica, realizei sete projetos extensionistas, com clientes reais, que trouxeram experiências extremamente relevantes para o meu preparo profissional.</p>
+      <p>Você pode clicar nos cards para conhecer alguns dos meus trabalhos.</p>
+      <p>Espero que você goste!</p>
+      <p class="fs-2 pt-1"></p>
+      <p>Bon voyage!</p>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-6 order-md-2">
+  <div class="row row-cols-2 row-cols-md-2 g-4 pt-4">
+  <div class="col" *ngFor="let item of cardapioItems">
+    <div class="card c-cardapio">
+      <img
+        [src]="item.image"
+        class="card-img-top item rounded"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+        <p class="card-text fs-6">{{ item.description }}</p>
       </div>
-      </div>
-      <div class="col">
-        <div class="card sociais">
-            <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
-            <div class="card-body">
-                <p class="fw-normal fw-bold fs-3">Projects</p>
-              </div>
-              <div class="col">
-                <div class="sociais">
-                  <a class="link" href="https://github.com/biarhaissem" target="_blank"><i
-                    class="fab fa-github fw-bold fs-1"></i></a>
-                  <p class="fs-4 pt-2"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-    <div class="col">
-        <div class="card sociais">
-            <img src="assets/images/logonovo2.png" class="card-img-top" alt="biatech logo" />
-            <div class="card-body">
-                <p class="fw-normal fw-bold fs-3">Music</p>
-            </div>
-            <div class="col">
-              <div class="sociais">
-                <a class="link" href="https://biarhäissem.hearnow.com" target="_blank"><i
-                  class="fab fa-spotify fw-bold fs-1"></i></a>
-                <p class="fs-4 pt-2"></p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+  </div>
+  </div>
 
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
+    </div>
+  </div>
+</div>
+  </div>
+
+<p class="fs-1 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+
+  <div class="ticker-container">
+    <div class="ticker">
+      <img src="assets/images/1.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/2.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/3.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/4.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/5.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/6.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/7.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/8.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/9.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/10.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/11.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/12.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/13.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/14.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/15.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/16.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/17.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/18.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/19.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/20.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/1.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/2.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/3.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/4.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/5.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/6.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/7.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/8.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/9.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/10.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/11.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/12.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/13.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/14.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/15.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/16.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/17.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/18.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/19.png" alt="Ícone de linguagem 1" />
+      <img src="assets/images/20.png" alt="Ícone de linguagem 1" />
+      <!-- Adicione quantos ícones desejar -->
+    </div>
+  </div>
+
+<p class="fs-1 pt-1"></p>
+<p class="fs-1 pt-1"></p>
+
+  <div class="text-center">
+    <p class="text fs-2 fw-bolder pt-3">MY TECH SKILLS</p>
+  <div class="fs-5">
+  <p class="fs-4 pt-1"></p>
+
+<!-- CARDÁPIO -->
+ <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+  <div class="col" *ngFor="let item of batalhaItems">
+    <div class="card c-batalha">
+      <img
+        [src]="item.image"
+        class="card-img-left batalha"
+        alt="{{ item.title }}"
+        (click)="expandImage(item.image, item.linkUrl)">
+      <div class="card-body text-center">
+        <p class="card-title">{{ item.title }}</p>
+        <!-- <p class="card-text fs-6">{{ item.description }}</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para exibir a imagem ampliada -->
+<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close-btn" (click)="closeModal()">&times;</span>
+    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
+    <!-- Botão para abrir o link, se houver um link associado -->
+    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
+      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <p class="fs-2 pt-1"></p>
+  <p class="fs-2 pt-1"></p>
 
 

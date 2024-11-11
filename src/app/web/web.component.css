@@ -1,7 +1,77 @@
-/* Cards ajustáveis */
 .card {
-  max-width: auto;
+  max-width: 500px; /* ou o tamanho que preferir */
   max-height: auto;
-  margin: auto;
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a imagem não extrapole o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 
+.card-image {
+  width: 100%;
+  height: auto; /* Ajusta a imagem para ocupar toda a largura do card */
+  border-radius: inherit; /* Herdará o border-radius do card */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.c-wix {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-new {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-angular {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-frontback {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.img-fluid {
+  width: 90%;
+  height: auto;
+}
+
+.modal {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  z-index: 100; /* Garantir que fique sobre outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quando o modal estiver ativo */
+.show-modal {
+  display: flex; /* Exibir o modal e centralizar conteúdo */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  position: relative;
+  max-width: 1000px;
+  max-height: 1000px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(97, 97, 97, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-start{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}

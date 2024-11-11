@@ -34,23 +34,34 @@ a {
   }
 }
 
-/* Responsividade simples usando Flexbox */
 .container {
+  position: relative; /* Necessário para posicionar o .social-icons relativo a ele */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin-top: 5rem;
   margin-bottom: 2rem;
   padding: 2rem;
-  background: rgb(300, 300, 300, 0.6);
+  background: rgba(300, 300, 300, 0.6);
   border-radius: 1rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   font-family: 'Josefin Sans', sans-serif;
   color: #212121;
 }
 
+/* Estilos para posicionar os ícones sociais no canto superior direito */
+.social-icons {
+  position: absolute; /* Fixação relativa ao container */
+  top: 1rem; /* Distância do topo do container */
+  right: 1rem; /* Distância do lado direito do container */
+  display: flex;
+  font-size: 18px;
+  gap: 0.5rem; /* Espaçamento entre os ícones */
+  z-index: 10; /* Para garantir que fique sobre o conteúdo */
+}
+
 .container-fluid {
-  background: linear-gradient(to right, rgb(245, 245, 245, 0.8),rgb(97, 97, 97, 0.8));
+  background: linear-gradient(to top, rgb(245, 245, 245, 0.8),rgb(184, 134, 12, 0.8));
   padding-top: 12px;
   padding-bottom: 10px;
   position: fixed;
@@ -73,7 +84,7 @@ a {
 }
 
 .footer {
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8),rgb(97, 97, 97, 0.8));
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0.8),rgb(184, 134, 12, 0.8));
   padding: 1.2rem;
   color: #212121;
   font-family: 'Josefin Sans', sans-serif;
@@ -92,7 +103,7 @@ h1, p {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   border-radius: 0.5rem;
-  background: linear-gradient(to bottom,rgb(140, 140, 140, 0.6),rgb(245, 245, 245, 0.6));
+  background: rgb(184, 134, 12, 0.2);
 }
 
 .card:hover {
@@ -117,8 +128,8 @@ h1, p {
 
 .btn-primary{
   text-decoration: none;
-  margin-bottom: 4rem;
-  position: relative;
+  margin-bottom: 0;
+  position: auto;
   /* background-color: #212121; */
   transition: color 0.3s;
   /* border-color: #212121; */
@@ -136,7 +147,7 @@ h1, p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
   justify-content: center;
   align-items: center;
 }
@@ -149,16 +160,17 @@ h1, p {
 /* Conteúdo do modal */
 .modal-content {
   position: relative;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 1000px;
+  max-height: 1000px;
   width: 100%;
   height: auto;
-  background-color: #616161cc;
+  background-color: rgba(97, 97, 97, 0.6);
   padding: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 
 /* Botão para fechar o modal */
@@ -175,7 +187,9 @@ h1, p {
 
 /* Estilo da imagem no modal */
 .modal-img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
   object-fit: contain; /* Garante que a imagem se ajuste corretamente sem distorcer */
 }
+
+
