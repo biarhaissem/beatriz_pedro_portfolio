@@ -126,18 +126,6 @@
         </div>
       </div>
     </div>
-
-<!-- Modal para exibir a imagem ampliada -->
-<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
-  <div class="modal-content" (click)="$event.stopPropagation()">
-    <span class="close-btn" (click)="closeModal()">&times;</span>
-    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
-    <!-- Botão para abrir o link, se houver um link associado -->
-    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
-      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
-    </div>
-  </div>
-</div>
 <p class="fs-2 pt-1"></p>
 <p class="fs-2 pt-1"></p>
 
@@ -165,18 +153,6 @@
       <div class="card-body text-center">
         <p class="card-title">{{ item.title }}</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal para exibir a imagem ampliada -->
-<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
-  <div class="modal-content" (click)="$event.stopPropagation()">
-    <span class="close-btn" (click)="closeModal()">&times;</span>
-    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
-    <!-- Botão para abrir o link, se houver um link associado -->
-    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
-      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
     </div>
   </div>
 </div>
@@ -208,18 +184,6 @@
       <div class="card-body text-center">
         <p class="card-title">{{ item.title }}</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal para exibir a imagem ampliada -->
-<div class="modal" [ngClass]="{'show-modal': showModal}" (click)="closeModal()">
-  <div class="modal-content" (click)="$event.stopPropagation()">
-    <span class="close-btn" (click)="closeModal()">&times;</span>
-    <img [src]="selectedImage" alt="Imagem ampliada" class="modal-img">
-    <!-- Botão para abrir o link, se houver um link associado -->
-    <div *ngIf="selectedLink" class="text-center fw-bold pt-2">
-      <button class="btn btn-primary" (click)="openExternalLink()">CLICK ME</button>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-iot',
@@ -6,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iot.component.css']
 })
 export class IotComponent implements OnInit {
+
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+
+  this.route.fragment.subscribe((fragment) => {
+    const element = document.getElementById(fragment!);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
+
 
   plantechItems = [
     {
@@ -41,11 +56,6 @@ export class IotComponent implements OnInit {
   selectedImage: string | null = null;
   selectedLink: string | null = null;
 
-  constructor() { }
-
-  ngOnInit(): void {}
-
-
   openExternalLink() {
     if (this.selectedLink) {
       window.open(this.selectedLink, '_blank'); // Abre o link em uma nova aba
@@ -64,5 +74,4 @@ export class IotComponent implements OnInit {
     this.selectedLink = null;
   }
 }
-
 

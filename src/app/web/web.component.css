@@ -33,17 +33,13 @@
   margin: auto; /* Centraliza o card dentro da coluna */
 }
 
+.text-start{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .modal {
-  display: none; /* Inicialmente escondido */
-  position: fixed;
-  z-index: 100; /* Garantir que fique sobre outros elementos */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
 }
 
 /* Quando o modal estiver ativo */
@@ -53,20 +49,5 @@
 
 /* Conteúdo do modal */
 .modal-content {
-  position: relative;
-  max-width: 900px;
-  max-height: 900px;
-  width: 100%;
-  height: auto;
-  background-color: rgba(97, 97, 97, 0.4);
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-start{
-  margin-left: 3rem;
-  margin-right: 3rem;
+  background-color: rgba(97, 97, 97, 0.8);
 }

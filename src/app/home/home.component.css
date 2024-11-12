@@ -60,27 +60,24 @@ white-space: nowrap; /* Evita que o texto quebre a linha */
   opacity: 1;
 }
 
-/* .card {
-  max-width: 350px;
-  gap: 0.2rem;
-} */
-
-.card {
-  width: auto; /* ou o tamanho que preferir */
-  border-radius: 12px;
-  overflow: hidden; /* Garante que a imagem não extrapole o card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
+.c-cardapio {
+  margin: auto; /* Centraliza o card dentro da coluna */
 }
 
-.card-image {
-  width: 100%;
-  height: auto; /* Ajusta a imagem para ocupar toda a largura do card */
-  border-radius: inherit; /* Herdará o border-radius do card */
+.c-batalha {
+  margin: auto; /* Centraliza o card dentro da coluna */
 }
 
-.card-content {
-  padding: 16px;
+.modal {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
 }
 
+/* Quando o modal estiver ativo */
+.show-modal {
+  display: flex; /* Exibir o modal e centralizar conteúdo */
+}
 
+/* Conteúdo do modal */
+.modal-content {
+  background-color: rgba(97, 97, 97, 0.8);
+}
