@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-more',
@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./more.component.css']
 })
 export class MoreComponent implements OnInit {
+  showScrollToTop = false;
 
   constructor() { }
 
   ngOnInit(): void {
-  }
+}
 
   cardapioItems = [
     {
@@ -59,6 +60,18 @@ export class MoreComponent implements OnInit {
     this.showModal = false;
     this.selectedImage = null;
     this.selectedLink = null;
+  }
+
+  // Ouvinte para rolagem da janela
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Mostra o botão quando o usuário rolar mais de 300px para baixo
+    this.showScrollToTop = window.scrollY > 300;
+  }
+
+  // Função para rolar para o topo da página
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
 }

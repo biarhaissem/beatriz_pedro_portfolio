@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  showScrollToTop = false;
   constructor(private router: Router) { }
 
   // Método para navegar até uma seção específica de uma página
@@ -99,5 +99,17 @@ export class HomeComponent implements OnInit {
     this.selectedImage = null;
     this.currentImage = null;
     console.log('Modal fechado');
+  }
+
+  // Ouvinte para rolagem da janela
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Mostra o botão quando o usuário rolar mais de 300px para baixo
+    this.showScrollToTop = window.scrollY > 300;
+  }
+
+  // Função para rolar para o topo da página
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

@@ -195,8 +195,9 @@
   <p class="text fs-3 fw-bolder pt-3">06. Front-end & Back-end</p>
 <div class="fs-5">
   <div class="fs-4">
-    <p>Etapa final de desenvolvimento utilizando Angular e TypeScript no Front-end e, Laravel e PHP no Back-end.</p>
-    <p>Nessa etapa final, eu já estava mais tranquila e achei muito interessante essa separação do front-end do back-end.</p>
+    <p>Etapa final de desenvolvimento, utilizando o framework Angular e a linguagem TypeScript no Front-end e, o framework Laravel e a linguagem PHP no Back-end.</p>
+    <p>Nessa etapa final, eu já estava mais tranquila e achei muito interessante essa organização onde o front-end e o back-end ficam separados.</p>
+    <p>Estudando ambas as estruturas, front e back, percebi o quanto facilita o desenvolvimento e aumenta a segurança do projeto trabalhar com essa separação.</p>
     <p>Construí duas versões finais: uma com Angular e Laravel, bem separadinha e, outra, apenas com o Laravel para visualização do "CRUD" (Create, Read, Update, Delete), utilizando o Blade.</p>
     <p>Depois de todo o esforço, dedicação, lágrimas e insistência, vem a melhor parte: funcionou!</p>
     <p>Pra mim, a sensação de ver que os dados registrados no cadastro do front-end "apareciam" nos registros do back-end, simultaneamente ao preenchimento do Banco de Dados e da API com Json, foi MÁGICO!</p>
@@ -270,5 +271,13 @@
       </div>
     </div>
   </div>
+
+<button
+  *ngIf="showScrollToTop"
+  (click)="scrollToTop()"
+  class="scroll-to-top-circle">
+  ↑
+</button>
+
   <p class="fs-2 pt-1"></p>
   <p class="fs-2 pt-1"></p>
