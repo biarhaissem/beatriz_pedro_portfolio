@@ -13,7 +13,7 @@ export class MoreComponent implements OnInit {
   ngOnInit(): void {
 }
 
-  cardapioItems = [
+  moreItems = [
     {
       title: 'PLANTECH',
       // description: '5 Planos de Garrett, 10 Heurísticas de Nielsen, Honeycomb, Gestalt.',

@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  cardapioItems = [
+  jobsItems = [
     {
       title: 'CupCakePop',
       description: 'Fullstack Web Project',
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  batalhaItems = [
+  skillsItems = [
     {
       title: 'CONCEPTIONS',
       image: 'assets/images/concep-1.png',

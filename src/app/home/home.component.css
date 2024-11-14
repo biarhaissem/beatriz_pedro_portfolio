@@ -60,11 +60,11 @@ white-space: nowrap; /* Evita que o texto quebre a linha */
   opacity: 1;
 }
 
-.c-cardapio {
+.c-jobs {
   margin: auto; /* Centraliza o card dentro da coluna */
 }
 
-.c-batalha {
+.c-skills {
   margin: auto; /* Centraliza o card dentro da coluna */
 }
 

@@ -62,8 +62,8 @@
 
 <div class="col-md-6 order-md-2">
   <div class="row row-cols-2 row-cols-md-2 g-4 pt-4">
-    <div class="col" *ngFor="let item of cardapioItems">
-      <div class="card c-cardapio">
+    <div class="col" *ngFor="let item of jobsItems">
+      <div class="card c-jobs">
         <img
           [src]="item.image"
           class="card-img-top item rounded"
@@ -141,11 +141,11 @@
 
 <!-- CARDÁPIO -->
  <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
-  <div class="col" *ngFor="let item of batalhaItems">
-    <div class="card c-batalha">
+  <div class="col" *ngFor="let item of skillsItems">
+    <div class="card c-skills">
       <img
         [src]="item.image"
-        class="card-img-left batalha"
+        class="card-img-left skills"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">

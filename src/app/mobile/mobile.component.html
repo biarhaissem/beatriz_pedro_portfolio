@@ -145,11 +145,11 @@
 
  <!-- CARDÁPIO -->
  <div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
-  <div class="col" *ngFor="let item of newItems">
-    <div class="card c-new">
+  <div class="col" *ngFor="let item of protItems">
+    <div class="card c-prot">
       <img
         [src]="item.image"
-        class="card-img-left new"
+        class="card-img-left prot"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">
@@ -177,11 +177,11 @@
 
 <!-- CARDÁPIO -->
 <div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
-  <div class="col" *ngFor="let item of angularItems">
-    <div class="card c-angular">
+  <div class="col" *ngFor="let item of expoItems">
+    <div class="card c-expo">
       <img
         [src]="item.image"
-        class="card-img-left angular"
+        class="card-img-left expo"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">
@@ -207,11 +207,11 @@
 
 <!-- CARDÁPIO -->
 <div class="row row-cols-2 row-cols-md-2 g-2 pt-4">
-<div class="col" *ngFor="let item of frontbackItems">
-  <div class="card c-frontback">
+<div class="col" *ngFor="let item of apresItems">
+  <div class="card c-apres">
     <img
       [src]="item.image"
-      class="card-img-left frontback"
+      class="card-img-left apres"
       alt="{{ item.title }}"
       (click)="expandImage(item.image, item.linkUrl)">
     <div class="card-body text-center">

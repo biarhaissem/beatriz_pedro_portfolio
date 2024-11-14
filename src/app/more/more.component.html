@@ -47,11 +47,11 @@
 
   <!-- CARDÁPIO -->
  <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
-  <div class="col" *ngFor="let item of cardapioItems">
-    <div class="card c-cardapio">
+  <div class="col" *ngFor="let item of moreItems">
+    <div class="card c-more">
       <img
         [src]="item.image"
-        class="card-img-left cardapio"
+        class="card-img-left more"
         alt="{{ item.title }}"
         (click)="expandImage(item.image, item.linkUrl)">
       <div class="card-body text-center">

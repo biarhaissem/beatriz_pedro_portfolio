@@ -20,7 +20,7 @@ export class MobileComponent implements OnInit {
   });
 }
 
-  newItems = [
+  protItems = [
     {
       title: 'Protótipo 1',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
@@ -35,7 +35,7 @@ export class MobileComponent implements OnInit {
     }
   ];
 
-  angularItems = [
+  expoItems = [
     {
       title: 'QRCode gerado no PC',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
@@ -50,7 +50,7 @@ export class MobileComponent implements OnInit {
     }
   ];
 
-  frontbackItems = [
+  apresItems = [
     {
       title: 'II JUPESQI',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
@@ -70,13 +70,13 @@ export class MobileComponent implements OnInit {
       title: 'Etapa 1 - Desafio',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
       image: 'assets/images/etp1-desafio.png',
-      linkUrl: 'https://www.figma.com/design/xy1G35TGLBCTsDogxuH4zp/Cantina-Reis---Template-Android-Nervoso?node-id=16-1478&node-type=frame&t=QOctQqlBCggNk1fs-0'
+      linkUrl: 'https://www.figma.com/design/0eL0Hvjm1IuHQv6J3fWUzF/Etapa-1?node-id=0-1&t=JBdBPo7KbYG3Kase-1'
     },
     {
       title: 'Etapa 1 - Beatriz Pedro',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
       image: 'assets/images/etp1-bia.png',
-      linkUrl: 'https://www.figma.com/design/xy1G35TGLBCTsDogxuH4zp/Cantina-Reis---Template-Android-Nervoso?node-id=16-1478&node-type=frame&t=QOctQqlBCggNk1fs-0'
+      linkUrl: 'https://www.figma.com/design/GM71wVzdXkdqYN74CuEncn/Etapa-1---Beatriz-Pedro?node-id=0-1&t=HS7xC4PdsOqHrl78-1'
     }
   ];
 
@@ -85,13 +85,13 @@ export class MobileComponent implements OnInit {
       title: 'Etapa 2 - Desafio',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
       image: 'assets/images/etp2-desafio.png',
-      linkUrl: ''
+      linkUrl: 'https://www.figma.com/design/mdoZBPbGXQqmun1Xucowo6/Etapa-2---Desafio?node-id=11-2&t=y464Y1V8KMmfLkoa-1'
     },
     {
       title: 'Etapa 2 - Beatriz Pedro',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
       image: 'assets/images/etp2-bia.png',
-      linkUrl: 'https://youtu.be/vPbIg5x65xM?si=aLVwHpov_hmMiHgo'
+      linkUrl: 'https://www.figma.com/design/DAi3M77m5lyTUEUxLR7clh/Etapa-2?node-id=11-2&t=q35wTygWRx3vBnpB-1'
     }
   ];
 
@@ -100,13 +100,13 @@ export class MobileComponent implements OnInit {
       title: 'Etapa 3 - Desafio',
       // description: 'Pesquisas, Brainstorms, Protótipos de Baixa Fidelidade',
       image: 'assets/images/etp3-desafio.png',
-      linkUrl: 'https://youtu.be/vfzQWAsq-7s?si=wImrknYuXSnd2pgy'
+      linkUrl: 'https://www.figma.com/design/41ziL0zhTmTJ3vYuoOJpUO/Etapa-3---Desafio?node-id=0-1&t=y464Y1V8KMmfLkoa-1'
     },
     {
       title: 'Etapa 3 - Beatriz Pedro',
       // description: 'Benchmarking, HTML5, Ferramentas NoCode',
       image: 'assets/images/etp3-bia.png',
-      linkUrl: 'https://youtu.be/gSkR6ZjnTps?si=j1sFnIKYfbDqQl7X'
+      linkUrl: 'https://www.figma.com/design/bJx86jtU9jo6HD830Un4Us/Etapa-3---Beatriz-Pedro?node-id=2049-1337&t=XcUyoV0iLQcXcbRO-1'
     }
   ];
 
