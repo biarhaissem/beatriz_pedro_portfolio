@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       title: 'Dashboard Gerencial',
       description: 'Desafio Power BI',
       image: 'assets/images/dashfig.png',
-      linkUrl: "biarhaissem.github.io/beatriz_pedro_portfolio/data"
+      linkUrl: "https://biarhaissem.github.io/beatriz_pedro_portfolio/data"
     },
   ];
 
