@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   jobsItems = [
     {
       title: 'CupCakePop',
-      description: 'Fullstack Web Project',
+      description: 'Full Stack Project',
       image: 'assets/images/webnew.png',
       linkUrl: "https://biarhaissem.github.io/beatriz_pedro_portfolio/web",
     },
@@ -32,15 +32,15 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Cantina Reis App',
-      description: 'E-commerce Mobile App',
+      description: 'E-commerce Mobile',
       image: 'assets/images/frangoexpmao.png',
       linkUrl: "https://biarhaissem.github.io/beatriz_pedro_portfolio/mobile"
     },
     {
-      title: 'Batalha dos Pets',
-      description: 'Mobile App - Desafio UX/UI',
-      image: 'assets/images/pets uau.png',
-      navigateTo: () => this.navigateToSection('mobile', 'metade')  // Usando função para navegação com fragmento
+      title: 'Dashboard Gerencial',
+      description: 'Desafio Power BI',
+      image: 'assets/images/dashfig.png',
+      linkUrl: "biarhaissem.github.io/beatriz_pedro_portfolio/data"
     },
   ];
 
@@ -50,19 +50,19 @@ export class HomeComponent implements OnInit {
       image: 'assets/images/concep-1.png',
       linkUrl: ''
     },
+     {
+      title: 'DEVELOPMENT',
+      image: 'assets/images/prog-t.png',
+      linkUrl: ''
+    },
     {
-      title: 'WEB DESIGN',
+      title: 'DESIGN UX/UI',
       image: 'assets/images/web-t.png',
       linkUrl: ''
     },
     {
-      title: 'MOBILE DESIGN',
-      image: 'assets/images/mob.png',
-      linkUrl: ''
-    },
-    {
-      title: 'PROGRAMMING',
-      image: 'assets/images/prog-t.png',
+      title: 'DATA ANALYSIS',
+      image: 'assets/images/powerbiafig.png',
       linkUrl: ''
     },
   ];

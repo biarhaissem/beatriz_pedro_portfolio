@@ -1,0 +1,53 @@
+.card {
+  max-width: 500px; /* ou o tamanho que preferir */
+  max-height: auto;
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a imagem não extrapole o card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Ajusta a imagem para ocupar toda a largura do card */
+  border-radius: inherit; /* Herdará o border-radius do card */
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.c-wix {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-new {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-angular {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.c-frontback {
+  margin: auto; /* Centraliza o card dentro da coluna */
+}
+
+.text-start{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+}
+
+/* Quando o modal estiver ativo */
+.show-modal {
+  display: flex; /* Exibir o modal e centralizar conteúdo */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: rgba(97, 97, 97, 0.8);
+}
